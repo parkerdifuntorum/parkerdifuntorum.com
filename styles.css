@@ -248,3 +248,13 @@ h3 {
   .nav { align-items: flex-start; gap: 0.8rem; flex-direction: column; }
   .nav-links { flex-wrap: wrap; gap: 0.8rem; }
 }
+
+
+.project h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: var(--accent);
+}

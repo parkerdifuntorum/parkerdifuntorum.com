@@ -31,3 +31,13 @@ Added:
 - Delta Wireless RF & Wireless Communications Technician experience
 - Graduate / PhD student research experience
 - Expanded research description covering IoT, embedded sensing, BLE/NFC, biomedical sensing, cloud pipelines, and cyber-physical systems
+
+
+## Latest link/content update
+Added/updated:
+- Google Scholar: https://scholar.google.com/citations?user=g2ff33cAAAAJ&hl=en
+- LinkedIn: https://www.linkedin.com/in/parker-difuntorum-89703519b/
+- TPL Studies Web App: https://transmissionstudies.streamlit.app/
+- Publications and patents section
+- Revised PG&E experience to remove RTNET/RTCA evaluation language
+- Added Bash/CLI/Perl/Python model standardization automation and evaluation tooling language
