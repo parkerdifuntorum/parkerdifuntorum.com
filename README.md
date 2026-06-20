@@ -1,43 +1,49 @@
 # parkerdifuntorum.com
 
-Static personal website for Parker Difuntorum.
+Polished static personal website for Parker Difuntorum, M.S., E.I.T.
 
 ## Files
 - `index.html`
 - `styles.css`
 - `script.js`
+- `README.md`
 
-## Deploy options
-### Vercel
-1. Create a new project.
-2. Upload or connect this folder/repository.
-3. Add the domain `parkerdifuntorum.com`.
-4. In your domain registrar, point DNS to Vercel as instructed.
+## Included updates
+- Name is the largest hero text
+- Credentials added next to name area: `M.S. | E.I.T. | U.S. Coast Guard Veteran`
+- Keeps tagline: "Power systems engineer building practical bridges between grid operations, planning, data, research, and resilient automation."
+- Adds affiliation/logo placeholders for USCG, CSU Sacramento, and UF
+- Adds metrics row: publications, patent applications, experience, Power + AI research
+- Adds expanded experience timeline:
+  - Liberty Utilities
+  - PG&E
+  - University of Florida Research
+  - Ulteig
+  - Delta Wireless
+  - Intel
+  - U.S. Coast Guard
+- Adds education section
+- Adds project cards
+- Adds publication and patent links
+- Uses exact links:
+  - Google Scholar: https://scholar.google.com/citations?user=g2ff33cAAAAJ&hl=en
+  - LinkedIn: https://www.linkedin.com/in/parker-difuntorum-89703519b/
+  - TPL Studies Web App: https://transmissionstudies.streamlit.app/
 
-### GitHub Pages
-1. Create a repository named `parkerdifuntorum.com` or similar.
-2. Upload these files.
-3. Enable GitHub Pages from the repository settings.
-4. Point your domain to GitHub Pages.
+## Logo note
+The current version uses clean text-based logo/emblem placeholders to avoid bundling trademarked or copyrighted image files.
+To use official images, replace the `.logo-badge` blocks in `index.html` with image tags, for example:
 
-## Suggested edits before publishing
-- Replace the LinkedIn URL if needed.
-- Replace Google Scholar with your exact Scholar profile URL.
-- Add a downloadable resume PDF if desired.
+```html
+<img src="assets/uscg-seal.png" alt="U.S. Coast Guard seal">
+<img src="assets/csu-sacramento-logo.png" alt="California State University, Sacramento logo">
+<img src="assets/uf-logo.png" alt="University of Florida logo">
+```
 
+Then place the image files inside an `assets/` folder.
 
-## Latest content update
-Added:
-- Delta Wireless RF & Wireless Communications Technician experience
-- Graduate / PhD student research experience
-- Expanded research description covering IoT, embedded sensing, BLE/NFC, biomedical sensing, cloud pipelines, and cyber-physical systems
-
-
-## Latest link/content update
-Added/updated:
-- Google Scholar: https://scholar.google.com/citations?user=g2ff33cAAAAJ&hl=en
-- LinkedIn: https://www.linkedin.com/in/parker-difuntorum-89703519b/
-- TPL Studies Web App: https://transmissionstudies.streamlit.app/
-- Publications and patents section
-- Revised PG&E experience to remove RTNET/RTCA evaluation language
-- Added Bash/CLI/Perl/Python model standardization automation and evaluation tooling language
+## Deploy on Vercel
+1. Create or open a GitHub repo named `parkerdifuntorum.com`.
+2. Upload these files to the root of the repo.
+3. Import the repo into Vercel.
+4. Add `parkerdifuntorum.com` and `www.parkerdifuntorum.com` under Project Settings > Domains.
