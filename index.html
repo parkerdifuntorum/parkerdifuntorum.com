@@ -3,160 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parker Difuntorum, M.S., E.I.T. | Power Systems Engineer & Researcher</title>
-    <meta
-      name="description"
-      content="Parker Difuntorum is a power systems engineer, researcher, and U.S. Coast Guard Veteran focused on grid operations, planning, EMS/SCADA, data, AI, and cyber-physical infrastructure resilience."
-    />
+    <title>Parker Difuntorum | Power Systems Engineer</title>
+    <meta name="description" content="Parker Difuntorum is a power systems engineer, researcher, and U.S. Coast Guard Veteran focused on grid operations, distribution planning, EMS/SCADA, AI, and cyber-physical infrastructure resilience." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;550;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
     <header class="topbar">
-      <a class="brand" href="#home">PARKER DIFUNTORUM</a>
+      <a class="brand" href="#home"><span class="brand-monogram">PD</span><span>Parker Difuntorum</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
       <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
-        <a href="#patents">Patents</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a class="resume-link" href="#contact">Resume ↓</a>
       </nav>
     </header>
 
     <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-left">
-          <h1 id="hero-title">Parker Difuntorum</h1>
-          <p class="credentials">M.S. <span>|</span> E.I.T. <span>|</span> U.S. Coast Guard Veteran</p>
-          <p class="tagline">
-            Power systems engineer building practical bridges between grid operations, planning, data,
-            research, and resilient automation.
-          </p>
-          <p class="focus-line">
-            Power Systems <b>•</b> Grid Operations <b>•</b> Distribution Planning <b>•</b> EMS/SCADA<br />
-            AI &amp; Cyber-Physical Systems <b>•</b> Grid Resilience <b>•</b> Research &amp; Innovation
-          </p>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Power Systems Engineer</p>
+          <h1>Parker<br />Difuntorum</h1>
+          <p class="hero-text">Power systems engineer building practical tools, researching the grid, and delivering resilient solutions from communications to control room.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-            <a class="btn" href="https://www.linkedin.com/in/parker-difuntorum-89703519b/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn" href="https://scholar.google.com/citations?user=3lpET5UAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a class="btn" href="#publications">Publications</a>
+            <a class="btn btn-gold" href="#contact">View Resume</a>
+            <a class="btn btn-navy" href="#projects">View Projects</a>
           </div>
         </div>
 
-        <div class="hero-right" aria-label="Profile image and grid artwork">
-          <div class="grid-art" aria-hidden="true">
-            <div class="tower"></div>
-            <span class="node n1"></span>
-            <span class="node n2"></span>
-            <span class="node n3"></span>
-            <span class="node n4"></span>
-            <span class="line l1"></span>
-            <span class="line l2"></span>
-            <span class="line l3"></span>
-          </div>
-          <picture class="profile-photo">
-            <source srcset="assets/profile-photo.webp" type="image/webp" />
-            <img src="assets/profile-photo.jpg" alt="Parker Difuntorum with dog" loading="eager" />
-          </picture>
+        <picture class="portrait-card">
+          <source srcset="assets/profile-dog.webp" type="image/webp" />
+          <img src="assets/profile-dog.jpg" alt="Parker Difuntorum with dog" />
+        </picture>
+      </section>
+
+      <section class="logo-strip container" aria-label="Affiliations">
+        <div class="logo-card uscg"><span class="logo-symbol">⚓</span><small>U.S. Coast Guard</small></div>
+        <div class="logo-card uf"><span class="logo-symbol">UF</span><small>University of Florida</small></div>
+        <div class="logo-card sac"><span class="logo-symbol">S</span><small>Sacramento State</small></div>
+        <div class="logo-card intel"><span class="logo-symbol">intel</span><small>Intel Corporation</small></div>
+        <div class="logo-card apple"><span class="logo-symbol">●</span><small>Apple Inc.</small></div>
+        <div class="logo-card pge"><span class="logo-symbol">PG&amp;E</span><small>PG&amp;E</small></div>
+        <div class="logo-card liberty"><span class="logo-symbol">Liberty</span><small>Liberty Utilities</small></div>
+      </section>
+
+      <section id="about" class="about-card container glass-card">
+        <div class="section-icon">♙</div>
+        <div>
+          <h2>About Me</h2>
+          <p>Power systems engineer with experience across the full stack of grid operations and planning. Background spans SCADA, EMS, state estimation, telemetry systems, protection, and distribution/transmission planning. I enjoy building tools that solve real operational problems and researching ways to make the grid more observable, resilient, and secure.</p>
         </div>
       </section>
 
-      <section class="emblem-strip" aria-label="Organizations and education">
-        <div class="emblem-card"><img src="assets/uscg-emblem.png" alt="United States Coast Guard emblem" /><span>U.S. Coast Guard</span></div>
-        <div class="emblem-card"><img src="assets/uf-emblem.png" alt="University of Florida emblem" /><span>University of Florida</span></div>
-        <div class="emblem-card"><img src="assets/sac-state-emblem.png" alt="California State University, Sacramento emblem" /><span>Sacramento State</span></div>
-        <div class="emblem-card wordmark delta"><div class="brand-mark">ΔW</div><span>Delta Wireless</span></div>
-        <div class="emblem-card wordmark apple"><div class="brand-mark">●</div><span>Apple</span></div>
-        <div class="emblem-card wordmark intel"><div class="brand-mark">intel</div><span>Intel Corporation</span></div>
-        <div class="emblem-card wordmark liberty"><div class="brand-mark"><i></i>Liberty</div><span>Liberty Utilities</span></div>
-        <div class="emblem-card wordmark pge"><div class="brand-mark">PG&amp;E</div><span>PG&amp;E</span></div>
-        <div class="emblem-card wordmark ge"><div class="brand-mark">GE</div><span>General Electric</span></div>
-      </section>
-
-      <section class="metrics" aria-label="Career highlights">
-        <div class="metric"><div class="metric-icon">▤</div><strong>2</strong><span>Publications<br /><small>Peer-reviewed</small></span></div>
-        <div class="metric"><div class="metric-icon">✦</div><strong>2</strong><span>Patent Applications<br /><small>Filed</small></span></div>
-        <div class="metric"><div class="metric-icon">▣</div><strong>15+</strong><span>Years<br /><small>Technical Experience</small></span></div>
-        <div class="metric"><div class="metric-icon">ϟ</div><strong>Power</strong><span>Systems<br /><small>+ AI Research Focus Areas</small></span></div>
-        <div class="metric"><div class="metric-icon">⌾</div><strong>Veteran</strong><span>U.S. Coast Guard<br /><small>Semper Paratus</small></span></div>
-      </section>
-
-      <section class="dashboard">
-        <div class="panel" id="projects">
-          <div class="panel-header"><h2>Featured Projects</h2><a href="#projects">View all projects →</a></div>
-          <div class="project-item"><div class="mini-icon">⌁</div><div><h3>AegisGrid RT</h3><p>Real-time grid monitoring and visualization platform for operational awareness and situational insight.</p></div></div>
-          <div class="project-item"><div class="mini-icon">△</div><div><h3><a href="https://transmissionstudies.streamlit.app" target="_blank" rel="noreferrer">TPL Studies Web App</a></h3><p>Transmission planning level studies platform for scenario analysis and planning workflows.</p></div></div>
-          <div class="project-item"><div class="mini-icon">⌕</div><div><h3>Job Search Smarter</h3><p>AI-powered job search automation and personalization tool with intelligent matching and tracking.</p></div></div>
-          <div class="project-item"><div class="mini-icon">⌁</div><div><h3>Communications-Aware State Estimation</h3><p>Research on resilience of state estimation with packet loss and communication constraints.</p></div></div>
-          <div class="project-item"><div class="mini-icon">▥</div><div><h3>Public Grid Observability Research</h3><p>Open-data analytics for grid visibility, digital twin construction, and reliability insights.</p></div></div>
-        </div>
-
-        <div class="panel" id="experience">
-          <div class="panel-header"><h2>Experience Timeline</h2><a href="#experience">View all experience →</a></div>
-          <div class="timeline">
-            <div class="timeline-row"><div class="mini-logo liberty">L</div><time>2026 – Present</time><p><strong>Liberty Utilities</strong><br /><small>Distribution Planning Engineer</small></p></div>
-            <div class="timeline-row"><div class="mini-logo pge">P</div><time>2022 – 2026</time><p><strong>PG&amp;E</strong><br /><small>EMS Operations Systems Engineer</small><br />Complex Bash/CLI/Perl/Python model standardization automation and evaluation tools.</p></div>
-            <div class="timeline-row"><div class="mini-logo ulteig">U</div><time>2021 – 2022</time><p><strong>Ulteig</strong><br /><small>SCADA Design &amp; Integration Engineer</small></p></div>
-            <div class="timeline-row"><div class="mini-logo uf">UF</div><time>2019 – 2021</time><p><strong>University of Florida</strong><br /><small>Ph.D. Student Research — AI / IoT / Cyber-Physical Systems</small></p></div>
-            <div class="timeline-row"><div class="mini-logo intel">i</div><time>2018 – 2019</time><p><strong>Intel Corporation</strong><br /><small>HPC / Technical Systems</small></p></div>
-            <div class="timeline-row"><div class="mini-logo apple">●</div><time>2017</time><p><strong>Apple</strong><br /><small>Technical Support / Systems Experience</small></p></div>
-            <div class="timeline-row"><div class="mini-logo delta">D</div><time>2010 – 2013</time><p><strong>Delta Wireless</strong><br /><small>RF &amp; Wireless Communications Technician</small></p></div>
-            <div class="timeline-row"><div class="mini-logo uscg">⚓</div><time>2006 – 2010</time><p><strong>U.S. Coast Guard</strong><br /><small>Electronics Technician — Communications &amp; Electronics Systems</small></p></div>
-          </div>
-        </div>
-
-        <div class="side-stack">
-          <div class="panel compact" id="publications">
-            <div class="panel-header"><h2>Publications</h2><a href="https://scholar.google.com/citations?user=3lpET5UAAAAJ" target="_blank" rel="noreferrer">View all publications →</a></div>
-            <div class="publication"><div class="pub-cover green"></div><div><h3><a href="https://ieeexplore.ieee.org/document/9171264" target="_blank" rel="noreferrer">A Wearable Skin Temperature Monitoring System for Early Detection of Infections</a></h3><p>IEEE Sensors Journal</p></div></div>
-            <div class="publication"><div class="pub-cover purple"></div><div><h3><a href="https://www.frontiersin.org/articles/10.3389/fnhum.2020.00054/full" target="_blank" rel="noreferrer">Proceedings of the Seventh Annual Deep Brain Stimulation Think Tank</a></h3><p>Frontiers in Human Neuroscience</p></div></div>
-            <a class="wide-btn" href="https://scholar.google.com/citations?user=3lpET5UAAAAJ" target="_blank" rel="noreferrer">View Google Scholar Profile →</a>
-          </div>
-
-          <div class="panel compact" id="patents">
-            <div class="panel-header"><h2>Patent Applications</h2><a href="https://patents.google.com/?inventor=Parker+Difuntorum" target="_blank" rel="noreferrer">View all patents →</a></div>
-            <div class="patent"><div class="doc-icon">▧</div><div><h3><a href="https://patents.google.com/?q=(Autonomous+Drone+Control+System+Edge+AI+Secure+Telemetry)&inventor=Parker+Difuntorum" target="_blank" rel="noreferrer">Autonomous Drone Control System with Edge AI and Secure Telemetry</a></h3><p>Patent search link</p></div></div>
-            <div class="patent"><div class="doc-icon">▧</div><div><h3><a href="https://patents.google.com/?q=(DJIN+Dynamic+JTAG+Interface+Network)&inventor=Parker+Difuntorum" target="_blank" rel="noreferrer">DJIN: Dynamic JTAG Interface Network for Hardware Security and Debug</a></h3><p>Patent search link</p></div></div>
-          </div>
+      <section id="experience" class="container section-block">
+        <p class="section-kicker">▧ Experience Snapshot</p>
+        <div class="experience-grid">
+          <article class="experience-card"><div class="card-icon">▤</div><h3>EMS Operations<br />Systems Engineer</h3><p class="company">PG&amp;E</p><p class="dates">2022 – 2026</p><p>Grid control center engineer supporting EMS, SCADA, state estimation, ICCP, and operations systems.</p></article>
+          <article class="experience-card"><div class="card-icon">⌁</div><h3>SCADA Design /<br />Integration</h3><p class="company">Ulteig</p><p class="dates">2021 – 2022</p><p>SCADA design, RIG testing, telemetry validation, and integration for utility and renewable projects.</p></article>
+          <article class="experience-card"><div class="card-icon">⌘</div><h3>Researcher –<br />IoT / AI</h3><p class="company">University of Florida</p><p class="dates">2019 – 2021</p><p>IoT, embedded ML, and cloud pipelines for wearable sensing, health monitoring, and edge inference.</p></article>
+          <article class="experience-card"><div class="card-icon">▣</div><h3>HPC Solutions<br />Engineer</h3><p class="company">Intel Corporation</p><p class="dates">2018 – 2019</p><p>Automation and tooling for high performance computing environments and distributed infrastructure.</p></article>
+          <article class="experience-card"><div class="card-icon">⌁</div><h3>USCG Electronics<br />Technician</h3><p class="company">U.S. Coast Guard</p><p class="dates">2006 – 2010</p><p>Communications systems technician supporting critical maritime operations and infrastructure.</p></article>
         </div>
       </section>
 
-      <section class="content-section" id="about">
-        <h2>About</h2>
-        <p>Parker Difuntorum is a power systems engineer, researcher, and U.S. Coast Guard Veteran with experience across utility control center operations, distribution planning, SCADA/EMS, RF communications, Apple technical support, Intel technical systems, AI/IoT research, cloud-connected sensing, and cyber-physical infrastructure resilience.</p>
-      </section>
-
-      <section class="content-section" id="research">
-        <h2>Research Focus</h2>
-        <p>Research interests include cyber-physical grid resilience, public-data observability, communications-aware state estimation, digital twins, edge sensing, sensor fusion, embedded AI, and practical automation for operational infrastructure.</p>
-      </section>
-
-      <section class="content-section" id="education">
-        <h2>Education</h2>
-        <div class="education-grid">
-          <div><h3>University of Florida</h3><p>M.S. / AI &amp; IoT Research</p></div>
-          <div><h3>California State University, Sacramento</h3><p>B.S. Electrical Engineering — Power Systems Focus</p></div>
+      <section id="projects" class="container section-block two-column">
+        <div class="glass-card content-panel">
+          <h2>Featured Projects</h2>
+          <div class="item"><strong>AegisGrid RT</strong><span>Real-time grid telemetry and operational visualization platform.</span></div>
+          <div class="item"><strong>TPL Studies Web App</strong><span>Transmission planning sandbox for contingency and upgrade analysis.</span></div>
+          <div class="item"><strong>Job Search Smarter</strong><span>AI-powered job search and ranking application.</span></div>
         </div>
+        <div id="publications" class="glass-card content-panel">
+          <h2>Publications & Patents</h2>
+          <div class="item"><strong>IEEE Sensors Journal</strong><span>Wearable skin temperature monitoring system for early infection detection.</span></div>
+          <div class="item"><strong>Frontiers in Human Neuroscience</strong><span>Deep Brain Stimulation Think Tank proceedings.</span></div>
+          <div class="item"><strong>Patent Applications</strong><span>Autonomous drone control and JTAG hardware security concepts.</span></div>
+        </div>
+      </section>
+
+      <section id="skills" class="container section-block skills-row">
+        <span>Power Flow</span><span>State Estimation</span><span>CYME</span><span>EMS / SCADA</span><span>DNP3</span><span>ICCP</span><span>SQL</span><span>Perl</span><span>Python</span><span>Grid Resilience</span>
       </section>
     </main>
 
-    <footer class="footer" id="contact">
-      <a href="mailto:parkerdifuntorum@gmail.com">parkerdifuntorum@gmail.com</a>
-      <a href="https://www.linkedin.com/in/parker-difuntorum-89703519b/" target="_blank" rel="noreferrer">linkedin.com/in/parker-difuntorum-89703519b</a>
-      <a href="https://scholar.google.com/citations?user=3lpET5UAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
-      <a href="https://transmissionstudies.streamlit.app" target="_blank" rel="noreferrer">transmissionstudies.streamlit.app</a>
+    <footer id="contact" class="footer">
+      <div class="container footer-inner">
+        <a href="mailto:parkerdifuntorum@gmail.com">✉ parkerdifuntorum@gmail.com</a>
+        <a href="tel:+19163351150">☎ 916-335-1150</a>
+        <a href="https://github.com/parkerdifuntorum" target="_blank" rel="noreferrer">github.com/parkerdifuntorum</a>
+        <a href="https://www.linkedin.com/in/parker-difuntorum-89703519b/" target="_blank" rel="noreferrer">linkedin.com/in/parkerdifuntorum</a>
+      </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
