@@ -1,12 +1,6 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll(".nav a").forEach((a) => a.classList.remove("active"));
+    link.classList.add("active");
   });
-
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => nav.classList.remove('open'));
-  });
-}
+});
