@@ -1071,3 +1071,67 @@ h1 {
   .credential-hero-links .pe-hero-link,
   .credential-hero-links .pmp-hero-link { width: 100%; }
 }
+
+
+/* ========================================================
+   FULL-BLEED FAMILY PHOTO — replaces blue hero artwork
+   ======================================================== */
+.hero-right {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: none;
+}
+
+.hero-right .grid-art,
+.hero-right .tower,
+.hero-right .node,
+.hero-right .line {
+  display: none;
+}
+
+.hero-right .profile-photo {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  aspect-ratio: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.hero-right .profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  filter: none;
+}
+
+@media (max-width: 1180px) {
+  .hero-right { min-height: min(88vw, 600px); }
+}
+
+@media (max-width: 720px) {
+  .hero-right { min-height: min(108vw, 520px); }
+}
