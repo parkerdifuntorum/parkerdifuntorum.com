@@ -1135,3 +1135,42 @@ h1 {
 @media (max-width: 720px) {
   .hero-right { min-height: min(108vw, 520px); }
 }
+
+
+/* Additional professional credentials */
+.additional-credentials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.15rem;
+}
+.additional-credential {
+  padding: 1.2rem 1.25rem;
+  background: #f8fbff;
+  border: 1px solid var(--line, #d9e3f1);
+  border-radius: 12px;
+  min-width: 0;
+}
+.additional-credential-code {
+  display: inline-block;
+  margin-bottom: .65rem;
+  color: #174d89;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .065em;
+}
+.additional-credential h3 {
+  margin: 0 0 .55rem;
+  font-size: 1.07rem;
+  color: #061b3c;
+  line-height: 1.35;
+}
+.additional-credential p {
+  margin: 0;
+  color: #52617a;
+  font-size: .88rem;
+  line-height: 1.55;
+}
+@media (max-width: 960px) {
+  .additional-credentials { grid-template-columns: 1fr; }
+}
