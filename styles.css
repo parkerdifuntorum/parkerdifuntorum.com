@@ -526,6 +526,19 @@ h1 {
   color: #4e5e78;
 }
 
+.timeline-row .experience-reason {
+  display: block;
+  margin-top: .65rem;
+  color: #263c5d;
+  font-size: .83rem;
+  line-height: 1.55;
+}
+
+.timeline-row .experience-reason strong {
+  color: #0b2c61;
+}
+
+
 .side-stack {
   display: grid;
   gap: 1rem;
